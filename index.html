@@ -11,7 +11,12 @@
     <div class="main">
       <div class="background">
         <div class="background-img-container">
-          <img src="background.jpg" alt="background-img" width="100%" height="100%"/>
+          <img
+            src="background.jpg"
+            alt="background-img"
+            width="100%"
+            height="100%"
+          />
         </div>
         <div class="odin-img-container">
           <img src="odin-lined.png" alt="odin-lined" class="odin-img" />
@@ -19,22 +24,42 @@
         </div>
       </div>
       <div class="signup">
-            <div class="top">
-                <div class="text">
-                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+        <div class="top">
+          <div class="text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </div>
+          <div class="text">You <em>know</em> you want to.</div>
+        </div>
+        <div class="middle">
+          <div class="text">Lets do this!</div>
+          <form action="example.com/path" method="post">
+            <div class="mid-container">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" />
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" />
             </div>
-            <div class="text">You <em>know</em> you want to.</div>
+            <div class="mid-container">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+              <label for="phone_number">Phone Number</label>
+              <input type="number" id="phone_number" />
             </div>
-            <div class="middle">
-                <div class="text">            Lets do this!    </div>
+            <div class="mid-container">
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+              <label for="password">Confirm Password</label>
+              <input type="password" id="password" />
+            </div>
+          </form>
+        </div>
 
-            
-            </div>
-
-            <div class="bottom">
-                <button>Create Account</button>
-                <div class="text">Already have an account? Log in</div>
-            </div>
+        <div class="bottom">
+          <button>Create Account</button>
+          <div class="text">Already have an account? Log in</div>
+        </div>
       </div>
     </div>
   </body>
