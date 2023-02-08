@@ -62,7 +62,31 @@ div{
     justify-content: center;
     flex-direction: column;
     gap: 50px;
+    background-color: rgba(0,0,0,.2);
+}
+.bottom{
+    background-color: rgba(0,0,0,.2);
 }
 .text{
     font-size: 50px;
+}
+.mid-container{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+}
+.mid-container > *{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#midtop{
+    height: 70px;
+}
+
+form{
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
