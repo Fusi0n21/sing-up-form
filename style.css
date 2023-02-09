@@ -3,6 +3,9 @@
     src: url("Norse-Bold.otf") format("opentype")
     }
     
+
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -13,15 +16,14 @@ body{
     padding: 0;
     margin: 0;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 100vh;
-    width: 100vw;
+    box-sizing: border-box;
 }
 .main{
     display: flex;
-    flex-wrap: wrap;
+
 }
 .background{
-    flex: 1 1 300px;
+    flex: 1 1 400px;
     position: relative;
     top: 0;
     left: 0;
@@ -68,7 +70,7 @@ body{
 .signup{
     display: flex;
     flex-direction: column;
-
+    flex: 1 4 800px;
 }
 .signup > div{
     flex: 1;
@@ -136,4 +138,11 @@ input{
 label{
     font-size: 12px;
     font-weight: bolder;
+}
+
+@media screen and (max-width:900px) {
+    .background { height: 20vh;}
+    .odin-img-container { top: 0}
+    .main {    flex-wrap: wrap;}
+    .signup {height: 80vh}
 }
