@@ -10,27 +10,30 @@ input::-webkit-inner-spin-button {
 }
 
 body{
-    border: 2px solid black;
     padding: 0;
     margin: 0;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    width: 100vw;
 }
 .main{
     display: flex;
+    flex-wrap: wrap;
 }
 .background{
     flex: 1;
 }
 .signup{
     flex: 2;
+    display: flex;
+    border: 5px solid green;
 
 }
 div{
     border: 2px solid black;
 }
 .background-img-container{
-    width: 34vw;;
-    height:100vh;
+    
 }
 .odin-img-container{
     display: flex;
@@ -56,37 +59,41 @@ div{
 }
 .signup > div{
     flex: 1;
+    padding-left: 50px;
 }
 .top{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    gap: 50px;
     background-color: rgba(0,0,0,.2);
 }
 .bottom{
     background-color: rgba(0,0,0,.2);
 }
 .text{
-    font-size: 50px;
+    font-size: 25px;
 }
 .mid-container{
     display: flex;
     flex-direction: row;
-    gap: 250px;
 }
 .mid-container > *{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-#midtop{
-    height: 70px;
 }
 
-form{
-    height: calc(100% - 70px);
+.form-div{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+}
+button{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color:rebeccapurple;
+    color: white;
+    font-weight: bolder;
 }
