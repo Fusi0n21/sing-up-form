@@ -1,148 +1,150 @@
 @font-face {
-    font-family: "Norse-bold";
-    src: url("Norse-Bold.otf") format("opentype")
-    }
-    
-
-
+	font-family: "Norse-bold";
+	src: url("Norse-Bold.otf") format("opentype");
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing: border-box;
+body {
+	padding: 0px;
+	margin: 0;
+	font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+	box-sizing: border-box;
 }
-.main{
-    display: flex;
-
-}
-.background{
-    flex: 1 1 400px;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.signup{
-    flex: 5;
-    display: flex;
-    height: 100vh;
-
+.main {
+	display: flex;
 }
 
-.background-img-container{
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+.background {
+	flex: 1 1 400px;
+	position: relative;
+	top: 0;
+	left: 0;
 }
-.odin-img-container{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 0px;
-    top: 20vh;
-    height: 20vh;
-    width: 100%;
-    color: white;
-    font-family: Norse-bold;
-    background-color: rgba(0,0,0,.5);
-    
-}
-.odin-img{
-    height: 100%;
-}
-.odin-logo-text{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    font-size: 20vh;
-    padding-top: 2vh;
-    margin: 0;
+.signup {
+	flex: 5;
+	display: flex;
+	height: 100vh;
 }
 
-.signup{
-    display: flex;
-    flex-direction: column;
-    flex: 1 4 800px;
+.background-img-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 }
-.signup > div{
-    flex: 1;
-    padding-left: 50px;
-    padding-right: 50px;
+.odin-img-container {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 0px;
+	top: 20vh;
+	height: 20vh;
+	width: 100%;
+	color: white;
+	font-family: Norse-bold;
+	background-color: rgba(0, 0, 0, 0.5);
 }
-.top{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    background-color: rgba(0,0,0,.05);
+.odin-img {
+	height: 100%;
 }
-.bottom{
-    background-color: rgba(0,0,0,.05);
-}
-.text{
-    font-size: 20px;
-    margin-top: 20px;
-}
-.mid-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.mid-container > *{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    
-}
-.middle{
-    display: flex;
-    flex-direction: column;
-    
+.odin-logo-text {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-size: 20vh;
+	padding-top: 2vh;
+	margin: 0;
 }
 
-form{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
+.signup {
+	display: flex;
+	flex-direction: column;
+	flex: 1 4 800px;
+}
+.signup > div {
+	flex: 1;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.top {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.02);
+}
+.bottom {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+.text {
+	font-size: 20px;
+	margin-top: 20px;
+}
+.mid-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.mid-container > * {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+}
+.middle {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 2px 5px 0.1px black;
+}
 
+form {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
-.midtop{
-    flex: 1;
+.midtop {
+	flex: 1;
 }
-button{
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-    background-color:#596D48;
-    color: white;
-    font-weight: bolder;
-    margin-top: 30px;
-    border: 0;
+button {
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 10px;
+	background-color: #596d48;
+	color: white;
+	font-weight: bolder;
+	margin-top: 30px;
+	border: 0;
 }
-input{
-    width: 70%;
-    border: 2px solid #E5E7EB;
-    border-radius: 4px;
+input {
+	width: 90%;
+	height: 1.5em;
+	border: 2px solid #e5e7eb;
+	border-radius: 4px;
 }
 
-label{
-    font-size: 12px;
-    font-weight: bolder;
+label {
+	font-size: 12px;
+	font-weight: bolder;
 }
 
-@media screen and (max-width:900px) {
-    .background { height: 20vh;}
-    .odin-img-container { top: 0}
-    .main {    flex-wrap: wrap;}
-    .signup {height: 80vh}
+@media screen and (max-width: 900px) {
+	.background {
+		height: 20vh;
+	}
+	.odin-img-container {
+		top: 0;
+	}
+	.main {
+		flex-wrap: wrap;
+	}
+	.signup {
+		height: 80vh;
+	}
 }
